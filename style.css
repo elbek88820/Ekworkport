@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pangolin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+  }  
+body {
+    font-family: 'Funnel Sans', sans-serif;
+    background-color: #212529;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px 140px;
+}
+
+.nav-logo {
+    max-width: 70px;
+    border-radius: 50%; 
+}  
+
+.named {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.named1 {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list ul {
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    list-style: none;   
+}
+
+#bottone1 {
+    padding: 10px 40px;
+    border-radius: 9px;
+    background: #d5f365;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#bottone1:hover {
+    box-shadow: 7px 5px 56px -14px #C3D900;
+}
+
+#bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+}
+.header-list ul li a {
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header-list ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #d5f365; /* Цвет подсветки */
+    transition: width 0.3s ease;
+}
+
+.header-list ul li a:hover {
+    color: #d5f365; /* Цвет текста при наведении */
+}
+
+.header-list ul li a:hover::after {
+    width: 100%; /* Линия растягивается на всю ширину текста */
+}
+.photo-container {
+    position: relative;
+    width: 400px; /* Ширина прямоугольника */
+    height: 480px; /* Высота прямоугольника */
+    background: #d5f365; /* Цвет фона прямоугольника */
+    border-radius: 28px; /* Закруглённые углы */
+    overflow: hidden; /* Скрыть части изображения за границами */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 700px;
+}
+
+.photo-container img {
+    position: absolute;
+    top: -30px; /* Смещение изображения вверх */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    object-fit: cover; /* Уменьшение или увеличение изображения для заполнения контейнера */
+}
+main{
+    display: flex;
+    margin-top: 70зчpx;
+
+}
+.main-ins{
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+.main-ins h1{
+    font-size: 43px;
+}
+.main-ins h3{
+    font-size: 30px;
+}
+span{
+    color: #d5f365;
+}
+.social-sites {
+    color: white;
+    gap: 15px;
+    font-size: 35px;
+    margin-top: -150px;
+}
+.social-sites i {
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.5s ease; /* Добавляем плавный переход */
+}
+
+.social-sites i:hover {
+    background-color: #d5f365; /* Цвет подсветки */
+    color: #212529;
+}
+
+.main1{
+    margin-top: 300px;
+}
+.naz{
+    padding-bottom: 7px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-color: #212529;
+    border: 1px solid;
+    width: 130px;
+}
+
+.uslugi{
+    margin-top: 50px;
+    display: flex;
+    gap: 150px;
+
+}
+.info{
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    padding-top: 30px ;
+    padding-left: 20px;
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid;
+    transition: background-color 0.2s ease;
+    transition: transform 0.5s ease; /* Увеличили время перехода до 0.5 секунды */
+}
+.info:hover{
+    border-color: #d5f365;
+    transform: scale(1.125); /* Увеличение размера на 20% */
+}
+.icons{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid;
+    padding: 13px;
+    border-radius: 50%;
+    transition: background-color 0.5s ease; 
+}
+.icons:hover{
+    background-color: #d5f365; /* Цвет подсветки */
+    color: #212529;
+}
+/* Общий стиль для секции проектов */
+/* Общий стиль для секции проектов */
+.main2{
+    margin-top: 300px;
+}
+.projects {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+  }
+  
+  .info1 {
+    border: 1px solid;
+    text-align: center;
+    background-color: black;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .info1:hover {
+    border-color: #d5f365;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .info1 img {
+    width: 100%;
+    height: 150px; /* Высота изображения ограничена */
+    object-fit: cover; /* Обрезка изображения */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .info1 h3 {
+    color: #e3e3e3;
+    margin: 15px 0 5px;
+  }
+  
+  .info1 p {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  /* Модальное окно */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal:target {
+    display: flex;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal:target {
+    display: flex;
+  }
+  footer {
+    background: #222;
+    color: #ddd;
+    padding: 40px 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .about img {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  .about p {
+    line-height: 1.6;
+    max-width: 300px;
+  }
+  .links h4, .contact h4 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .links ul, .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  .links li, .contact li {
+    margin-bottom: 10px;
+  }
+  .links a, .contact a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .links a:hover, .contact a:hover {
+    color: #ffaa00;
+  }
+  .contact img {
+    width: 25px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  .contact img:hover {
+    transform: scale(1.1);
+  }
+  .modal {
+    display: none; /* По умолчанию модальные окна скрыты */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Тёмный фон */
+    z-index: 1000; /* Поверх всех элементов */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto; /* Прокрутка, если контент длинный */
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+footer{
+  margin-top: 100px;
+  width: 100%;
+}
+/* Модальные окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1; /* Сидит поверх контента */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Стили для изображения в модальном окне */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Стили для кнопки закрытия */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: pointer;
+}
